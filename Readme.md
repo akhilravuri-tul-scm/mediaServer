@@ -1,4 +1,4 @@
-# HeadSpin Backend Media Service Challenge
+# Backend Media Service Challenge
 
 Media server which accepts requests to upload audio WAV files. It then processes and transcodes the uploaded file to .mp3 format and saves it. A client can then make a request to get info about the file, get the transcoded .mp3 file, and delete the file.
 
