@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "cb82493c-d783-4c63-8d82-821bb6a56206",
+		"name": "Audio Converter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18479322"
+	},
+	"item": [
+		{
+			"name": "Get Audio",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v0/audio/1665385850870164.mp3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v0",
+						"audio",
+						"1665385850870164.mp3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AudioInfo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v0/audio/1665385850870164.mp3/info",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v0",
+						"audio",
+						"1665385850870164.mp3",
+						"info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload Audio",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "data-binary",
+							"type": "file",
+							"src": "/Users/sravuri/Downloads/sample-6s.wav"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/v0/audio/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v0",
+						"audio",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Audio",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v0/audio/1665385850870164.mp3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v0",
+						"audio",
+						"1665385850870164.mp3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
